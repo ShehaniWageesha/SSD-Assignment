@@ -10,7 +10,6 @@ import MailIcon from '@mui/icons-material/Mail';
 import NavigationSection from '../NavigationBar';
 import React from 'react';
 import axios from 'axios';
-import logo from '../../assets/LogoConceptCROP.png';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import useStyles from './styles';
@@ -144,7 +143,6 @@ export const MessageSend = () => {
   const renderContent = (
     <>
       <Box sx={{ px: 2.5, py: 3, display: 'inline-flex' }}>
-        <img src={logo} className={classes.logo} />
       </Box>
 
       <Box sx={{ mb: 3, mx: 2 }}>

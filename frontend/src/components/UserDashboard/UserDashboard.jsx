@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 import useStyles from './styles';
 import { styled, alpha } from '@mui/material/styles';
 import NavigationSection from '../NavigationBar';
-import logo from '../../assets/LogoConceptCROP.png';
 
 const NAV_WIDTH = 280;
 
@@ -31,11 +30,6 @@ const navConfig = [
   }
 ];
 
-// const account = {
-//   displayName: 'Jaydon Frankie',
-//   role: 'Manager'
-// };
-
 const StyledRoot = styled('div')({
   display: 'flex',
   minHeight: '100%',
@@ -49,7 +43,6 @@ const Main = styled('div')(({ theme }) => ({
   minHeight: '95vh',
   backgroundColor: '#f9fafb',
   paddingTop: 50,
-  //   paddingBottom: theme.spacing(10),
   paddingLeft: theme.spacing(2),
   paddingRight: theme.spacing(2)
 }));
@@ -113,9 +106,6 @@ export const UserDashboard = () => {
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem('user')));
 
-    // if (user == undefined) {
-    //   navigate('/');
-    // }
   }, []);
 
   useEffect(() => {
@@ -131,7 +121,6 @@ export const UserDashboard = () => {
   const renderContent = (
     <>
       <Box sx={{ px: 2.5, py: 3, display: 'inline-flex' }}>
-        <img src={logo} className={classes.logo} />
       </Box>
 
       <Box sx={{ mb: 3, mx: 2 }}>
@@ -151,16 +140,6 @@ export const UserDashboard = () => {
       <NavigationSection data={navConfig} />
 
       <Box sx={{ flexGrow: 1 }} />
-
-      {/* <Box sx={{ px: 2.5, pb: 3, mt: 10, textAlign: 'center' }}>
-        <Typography
-          align="center"
-          variant="caption"
-          marginTop={5}
-          className={classes.copyrightText}>
-          © Jikoo.com. All rights reserved.
-        </Typography>
-      </Box> */}
     </>
   );
 
@@ -193,13 +172,6 @@ export const UserDashboard = () => {
         </Drawer>
       </Box>
       <Main>
-        {/* <DataGrid
-          rows={rows}
-          columns={columns}
-          pageSize={5}
-          rowsPerPageOptions={[5]}
-          checkboxSelection
-        /> */}
         <Container maxWidth="xl">
           <Stack
             direction="row"
@@ -256,7 +228,6 @@ export const UserDashboard = () => {
           </Grid>
         </Container>
       </Main>
-      {/* <Box sx={{ bgcolor: '#f9fafb', width: '100%' }}>sadsd</Box> */}
     </StyledRoot>
   );
 };

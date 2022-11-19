@@ -6,7 +6,6 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import axios from 'axios';
-import logo from '../../assets/LogoConceptCROP.png';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import useStyles from './styles';
@@ -135,7 +134,6 @@ export const AuthUser = () => {
   return (
     <div>
       <Grid container spacing={0} direction="column" alignItems="center" marginTop={6}>
-        <img src={logo} className={classes.logo} />
         <Paper className={classes.paper}>
           <Typography variant="h5" className={classes.titleText}>
             LOGIN

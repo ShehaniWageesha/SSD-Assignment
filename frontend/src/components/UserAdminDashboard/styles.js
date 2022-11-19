@@ -1,9 +1,6 @@
 import { makeStyles } from 'tss-react/mui';
 
 export default makeStyles()(() => ({
-  logo: {
-    width: 120
-  },
   btn: {
     marginTop: 30,
     marginBottom: 30,

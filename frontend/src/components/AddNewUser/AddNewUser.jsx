@@ -16,7 +16,6 @@ import Select from '@mui/material/Select';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import axios from 'axios';
-import logo from '../../assets/LogoConceptCROP.png';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import useStyles from './styles';
@@ -183,7 +182,6 @@ export const AddNewUser = () => {
   const renderContent = (
     <>
       <Box sx={{ px: 2.5, py: 3, display: 'inline-flex' }}>
-        <img src={logo} className={classes.logo} />
       </Box>
 
       <Box sx={{ mb: 3, mx: 2 }}>

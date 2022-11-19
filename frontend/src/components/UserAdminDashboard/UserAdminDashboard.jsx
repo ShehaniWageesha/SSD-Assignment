@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 import useStyles from './styles';
 import { styled, alpha } from '@mui/material/styles';
 import NavigationSection from '../NavigationBar';
-import logo from '../../assets/LogoConceptCROP.png';
 
 const NAV_WIDTH = 280;
 
@@ -120,7 +119,6 @@ export const UserAdminDashboards = () => {
   const renderContent = (
     <>
       <Box sx={{ px: 2.5, py: 3, display: 'inline-flex' }}>
-        <img src={logo} className={classes.logo} />
       </Box>
 
       <Box sx={{ mb: 3, mx: 2 }}>

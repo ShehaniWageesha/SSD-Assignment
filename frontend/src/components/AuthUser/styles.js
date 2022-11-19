@@ -9,10 +9,6 @@ export default makeStyles()((theme) => ({
     textAlign: 'center',
     color: '#ffffff'
   },
-  logo: {
-    marginBottom: '15px',
-    height: '130px'
-  },
   titleText: {
     color: '#ffffff',
     fontSize: 26,
