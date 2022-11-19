@@ -36,7 +36,7 @@ const navConfig = [
 ];
 
 const account = {
-  displayName: 'Jaydon Frankie',
+  displayName: 'S. Wageesha',
   role: 'Manager'
 };
 

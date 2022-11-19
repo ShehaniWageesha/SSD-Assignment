@@ -95,7 +95,7 @@ export const UserAdminDashboards = () => {
   let navigate = useNavigate();
   const isFirstRender = useRef(true);
   const [user, setUser] = useState();
-  const [userName, setUserName] = useState('Jaydon Frankie');
+  const [userName, setUserName] = useState('S. Wageesha');
   const [userType, setUserType] = useState('Admin');
 
   useEffect(() => {

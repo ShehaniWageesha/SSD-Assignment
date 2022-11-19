@@ -49,7 +49,7 @@ const navConfig = [
 ];
 
 const account = {
-  displayName: 'Jaydon Frankie',
+  displayName: 'S. Wageesha',
   role: 'Admin'
 };
 
@@ -201,15 +201,6 @@ export const AddNewUser = () => {
       <NavigationSection data={navConfig} />
 
       <Box sx={{ flexGrow: 1 }} />
-      {/* <Box sx={{ px: 2.5, pb: 3, mt: 10, textAlign: 'center' }}>
-        <Typography
-          align="center"
-          variant="caption"
-          marginTop={5}
-          className={classes.copyrightText}>
-          © Jikoo.com. All rights reserved.
-        </Typography>
-      </Box> */}
     </>
   );
 

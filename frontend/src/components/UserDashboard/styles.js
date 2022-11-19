@@ -5,14 +5,14 @@ export default makeStyles()(() => ({
     marginTop: 30,
     marginBottom: 30,
     padding: 10,
-    backgroundColor: '#35abe6',
+    backgroundColor: '#CF6BFF',
     fontWeight: 600,
     '&:hover': {
       backgroundColor: '#FFFFFF',
-      color: '#09547a'
+      color: '#371A45'
     }
   },
   copyrightText: {
-    color: '#76badd'
+    color: '#545454'
   }
 }));
