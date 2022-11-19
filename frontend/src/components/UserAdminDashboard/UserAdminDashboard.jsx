@@ -180,13 +180,6 @@ export const UserAdminDashboards = () => {
         </Drawer>
       </Box>
       <Main>
-        {/* <DataGrid
-          rows={rows}
-          columns={columns}
-          pageSize={5}
-          rowsPerPageOptions={[5]}
-          checkboxSelection
-        /> */}
         <Container maxWidth="xl">
           <Stack
             direction="row"
@@ -196,7 +189,7 @@ export const UserAdminDashboards = () => {
             <Typography
               variant="h4"
               sx={{ fontSize: '1.5rem', fontWeight: '700', color: 'rgb(33, 43, 54)' }}>
-              Hey there! Welcome to Chatty 👋
+            Hey There! Welcome Back.
             </Typography>
             <Button variant="contained" sx={{ fontWeight: '600' }} onClick={onLogout}>
               Logout
