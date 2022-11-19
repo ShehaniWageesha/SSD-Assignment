@@ -150,7 +150,7 @@ export const UserDashboard = () => {
       }
     };
 
-    fetch(`https://localhost:3000/api/v1/message/getAllMessagesForUser/${userID}`, requestOptions)
+    fetch(`http://localhost:3000/api/v1/message/getAllMessagesForUser/${userID}`, requestOptions)
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -158,7 +158,7 @@ export const UserDashboard = () => {
       })
       .then((jsonRes) => setMessages(jsonRes));
 
-    fetch(`https://localhost:3000/api/v1/file/getFiles/${userID}`, requestOptions)
+    fetch(`http://localhost:3000/api/v1/file/getFiles/${userID}`, requestOptions)
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -237,7 +237,7 @@ export const UserDashboard = () => {
           PaperProps={{
             sx: {
               width: NAV_WIDTH,
-              bgcolor: '#181818',
+              bgcolor: '#152238',
               borderRightStyle: 'dashed',
               borderColor: '#CCCCCC'
             }
@@ -262,7 +262,7 @@ export const UserDashboard = () => {
             <Typography
               variant="h4"
               sx={{ fontSize: '1.5rem', fontWeight: '700', color: 'rgb(33, 43, 54)' }}>
-              Hi, Welcome back! 👋
+              Welcome Back!
             </Typography>
             <Button variant="contained" color="error" sx={{ fontWeight: '600' }} onClick={onLogout}>
               Logout
@@ -271,9 +271,9 @@ export const UserDashboard = () => {
           <Grid container spacing={3}>
             <Grid
               item
-              xs={6}
+              xs={15}
               sx={{
-                bgcolor: '#FFFFFF',
+                bgcolor: '#96C4DB',
                 padding: '20px',
                 mt: 3,
                 mr: 4,
@@ -291,11 +291,12 @@ export const UserDashboard = () => {
             {userType == 'Manager' ? (
               <Grid
                 item
-                xs={5}
+                xs={15}
                 sx={{
-                  bgcolor: '#FFFFFF',
+                  bgcolor: '#C8E7F1',
                   padding: '20px',
                   mt: 3,
+                  mr: 4,
                   borderRadius: '5px',
                   boxShadow: '1px 1px 5px #a8a8a8'
                 }}>

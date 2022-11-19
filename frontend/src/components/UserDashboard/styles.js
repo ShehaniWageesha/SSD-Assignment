@@ -9,7 +9,7 @@ export default makeStyles()(() => ({
     fontWeight: 600,
     '&:hover': {
       backgroundColor: '#FFFFFF',
-      color: '#371A45'
+      color: '#000000'
     }
   },
   copyrightText: {
